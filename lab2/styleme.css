@@ -1,0 +1,46 @@
+#sec1 {
+    font-family: Impact, sans-serif, Arial;
+    text-shadow: -2px 5px #1e3849;
+    background-color: rgba(42,97,116,1);
+    color: rgba(230,184,64,1);
+}
+header{
+    background-image: url("banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana;
+    font-size: 200%;
+    color: rgba(255,166,0,0.97);
+    text-shadow: -2px 5px rgba(43,61,81,0.96);
+    padding-top: 10%;
+    padding-bottom: 1%;
+    text-align: right;
+    padding-right: 2%;
+    background-color: rgba(42,97,116,0.62);
+    background-blend-mode: multiply;
+}
+body{
+    background-color: rgba(48,173,192,0.15);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+p::first-letter {
+    color: #c69c6d;
+    float: left;
+    font-size: 5em;
+    margin: 0 .2em 0 0;
+}
+dl{
+    color: olive;
+    font-family: Georgia;
+}
+
+ol.movies-list{
+    display: flex;
+    flex-direction: column-reverse;
+}
