@@ -1,0 +1,80 @@
+body{
+    background-image: url("background.png");
+}
+.banner{
+    text-align: center;
+    background-image: url("bannerbg.png");
+    background-repeat: repeat-x;
+    background-height: 50px;
+}
+.bread{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 800px;
+    border-width: 4px;
+    border-color: #7f7a77;
+    border-style: solid;
+    border-radius: 20px;
+    margin: auto;
+}
+.butter{
+    display-model: box;
+    background-color: #a1b963;
+    flex-direction: column;
+    width: 412px;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.tomato{
+    float: left;
+}
+.title{
+    text-align: center;
+    font-family: Tahoma Verdana sans-serif;
+    font-weight: bold;
+    font-size: 24pt;
+    text-shadow: 3px 3px #999999;
+}
+.comsection{
+    display: flex;
+    flex-direction: column;
+}
+.critic{
+}
+
+.critic  img{
+    float: left;
+
+}
+.innerbanner{
+    background-image: url("rbg.png");
+    background-repeat: repeat-x;
+    background-height: 83px;
+    width: 550px;
+    font-size: 48pt;
+    float: right;
+    color: red;
+    font-weight: bold;
+}
+.pagenumbers{
+    display: inline-block;
+}
+.commentbody{
+    border-width: 2px;
+    border-color: #7f7a77;
+    border-style: solid;
+    border-radius: 10px;
+}
+.commentbody  img{
+    float: left;
+}
+body{
+    font-size: 8pt;
+    font-family: Verdana Tahoma sans-serif;
+}
+.links{
+
+}

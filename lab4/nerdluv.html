@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="nerdluv.css" rel="stylesheet">
+    <title>New user signup</title>
+  </head>
+  <body>
+    <h1>New user signup</h1>
+    <form action="">
+      <p>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" />
+      </p>
+      <p>
+        <p>Gender: </p>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+        </div>
+      </p>
+      <p>
+        <label for="age">Age: </label>
+        <input type="text" name="age" id="age" />
+      </p>
+      <p>
+        <label for="p-type">Personality Type: </label>
+        <input type="text" name="p-type" id="p-type" />
+        <a href="https://www.16personalities.com/personality-types">(Don't know your type ?)</a>
+      </p>
+      <p>
+        <label for="ass">Favorite OS: </label>
+        <select name="ass" id="ass">
+          <option value=""></option>
+          <option value="1">Windows</option>
+          <option value="2">Linux</option>
+          <option value="3">mac</option>
+        </select>
+      </p>
+      <p>
+        <label for="s-age-from">Seeking Age: </label>
+        <input type="text" name="s-age-from" id="s-age-from" />
+        <label for="s-age-to">to </label>
+        <input type="text" name="s-age-to" id="s-age-to" />
+      </p>
+
+      <button type="submit">Signup</button>
+    </form>
+  </body>
+</html>
