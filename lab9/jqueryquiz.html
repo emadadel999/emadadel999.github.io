@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <title>jQuery Quiz I</title>
+
+    <link href="scope.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery1.js"></script>
+  </head>
+
+  <body>
+    <p>
+      1. In jQuery terminology, what is the difference between the “jQuery
+      function” and the “jQuery object”?
+    </p>
+    <p class="answer">
+      jquery function is a set of statment that performs some specific tasks on
+      a given jquery object.
+    </p>
+    <p>
+      2. Write jQuery code to find all h1 elements that are children of a div
+      element and make their background color red.
+    </p>
+    <h1>abc</h1>
+    <br />
+    <div>
+      <h1 style="background-color: red">div-1</h1>
+      <h1 style="background-color: red">div-2</h1>
+    </div>
+    <h1>xyz</h1>
+
+    <p>
+      3. Use a jQuery method to insert the text "YES!" at the end of the "p"
+      element.
+    </p>
+    <p class="jq">Is jQuery FUN or what?YES</p>
+    <p class="answer">
+      <code>
+        $(document).ready(function () { $("div h1").css("background-color",
+        "red"); $("p.jq").append("YES"); });
+      </code>
+    </p>
+  </body>
+</html>
