@@ -1,74 +1,69 @@
-body,
-button {
+/*
+CSE 190 M, Spring 2009, Marty Stepp
+Homework 6 (Fifteen Puzzle) style sheet
+*/
+
+body {
+  background-color: white;
   font-family: cursive;
   font-size: 14pt;
+}
+
+#controls,
+#overall,
+#puzzlearea {
+  width: 400px;
+}
+
+#controls {
+  padding-top: 10px;
   text-align: center;
+}
+
+h1 {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+/* Used to center the puzzle. */
+#overall {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* The area that holds the 15 puzzle pieces. */
 #puzzlearea {
-  font-size: 40pt;
-  width: 400px;
+  font-family: sans-serif;
+  font-size: 32pt;
   height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0px;
   position: relative;
 }
 
 /* This class should be applied to each of the 15 puzzle pieces. */
 .puzzlepiece {
   background-image: url(background.jpg);
-  border: 5px solid black;
-  width: 90px;
-  height: 90px;
+  background-size: 400px 400px;
+  border: 2px solid black;
+  height: 96px;
+  line-height: 96px;
   position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  width: 96px;
 }
 
 /* This class should be applied to a puzzle piece that can be moved. */
 .movablepiece:hover {
   border-color: red;
-  color: red;
+  color: #006600;
+  text-decoration: underline;
 }
 
-/* grading styles -- for TAs only; not required by students */
-#gradingarea {
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  z-index: 999999;
+#w3c {
+  text-align: right;
 }
 
-.valid {
-  background-color: #bfb;
+#w3c img {
+  border: none;
 }
-
-.invalid {
-  background-color: #f88;
-}
-
-/*
-init = function() {
-    var puzzleArea = document.getElementById('puzzlearea');
-    var divs = puzzleArea.getElementsByTagName("div");
-      
-    // initialize each piece
-    for (var i=0; i< divs.length; i++) {
-        var div = divs[i];
-        
-        // calculate x and y for this piece
-        var x = ((i % 4) * 100) ;
-        var y = (Math.floor(i / 4) * 100) ;
-
-        // set basic style and background
-        div.className = "puzzlepiece";
-        div.style.left = x + 'px';
-        div.style.top = y + 'px';
-        div.style.backgroundImage = 'url("background.jpg")';
-        div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
-        
-        // store x and y for later
-        div.x = x;
-        div.y = y; 
-    }        
-};
-*/
