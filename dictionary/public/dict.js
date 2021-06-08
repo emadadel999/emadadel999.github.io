@@ -5,17 +5,15 @@ $(document).ready(function () {
     var word = document.getElementById("word").value;
     $.post("http://localhost:5000/search", { word })
       .done(function (data) {
-        console.log(data);
         showresult(data);
       })
       .fail(function (err) {
-        console.log(err);
+        showError(err);
       });
   });
 });
 
 function showresult(obj) {
-  console.log(obj.length);
   $(".divTable").empty();
   for (let i = 0; i < obj.length; i++) {
     $(".divTable").append(
@@ -24,6 +22,15 @@ function showresult(obj) {
       }</div>`
     );
   }
+}
+function showError(err) {
+  $(".divTable").empty();
+  console.log(err);
+  $(".divTable").append(
+    `<div class="divRow">${
+      err.responseText ? err.responseText : err.statusText
+    }`
+  );
 }
 /* Then the Server calls word.js to find the definition(s)
 of the word in the SQL Dictionary, and then converts the definition(s) into JSON format and transmits it

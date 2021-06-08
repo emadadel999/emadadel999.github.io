@@ -16,11 +16,11 @@ app.post("/search", (req, res) => {
   let { word } = req.body;
   getWord(word)
     .then((def) => {
-      console.log(def);
-      res.send(def);
+      if (!def || def.length == 0) throw "Word Not found";
+      res.status(200).send(def);
     })
     .catch((err) => {
-      res.send(err);
+      res.status(500).send(err);
     });
 });
 
