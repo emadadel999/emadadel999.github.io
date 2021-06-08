@@ -1,0 +1,26 @@
+div-table {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  background-color: #eee;
+  border: 1px solid #666666;
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.divRow {
+  padding: 5px;
+}
+h1 {
+  background-color: rgb(212, 208, 208);
+  margin: 0px;
+}
+form {
+  background-color: rgb(243, 240, 240);
+  margin: 0px;
+}
+footer {
+  display: inline-block;
+
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
